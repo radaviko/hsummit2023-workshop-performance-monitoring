@@ -54,12 +54,11 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-jdbc-h2</artifactId>
     </dependency>
-    <!-- to enable- Service Binding (requires The SBO installed in the cluster)
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-kubernetes-service-binding</artifactId>
     </dependency> 
-    -->
+    
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-openshift</artifactId>
@@ -68,22 +67,16 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-health</artifactId>
     </dependency>
-    <!-- Enable Json Logging output
-    Json logging will be enabled by default in 'prod' profile
-    You can enable/disable it using QUARKUS_LOG_CONSOLE_JSON=false env var 
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-logging-json</artifactId>
     </dependency>
-    -->
-
-    <!-- Enable Micrometer for prometheus metrics.
-     Default metrics are exposed though /q/metrics endpoint
-     <dependency>
+      
+    <dependency>
        <groupId>io.quarkus</groupId>
        <artifactId>quarkus-micrometer-registry-prometheus</artifactId>
       </dependency>
-    -->
+    
 
     <!-- testing -->
     <dependency>
